@@ -1,0 +1,95 @@
+:root {
+	--fondo: #FEF6B8;
+	--bordes: #000000;
+	--white: #FFFFFF;
+}
+
+* {
+	padding: 45px;
+	padding-top: 25px;
+	/*	margin-left: 25px;*/
+}
+
+body {
+	background-image: url(./imagenes/universo.jpg);
+	padding: 25px;
+}
+
+h1 {
+	color: var(--white);
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	font-size: 100px;
+	padding-top: 15px;
+	margin-top: 15px;
+}
+
+#hero {
+		border: 2px solid var(--bordes);
+		background-color: var(--fondo)
+/*		background-image: url(./imagenes/universo.jpg);
+*/
+}
+
+h3 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	font-size: 35px;
+}
+
+.w {
+	height: 35%;
+	width: 35%;
+	transition: all 1s;
+}
+
+.w:hover {
+	height: 60%;
+	width: 60%;
+	transition: all 1s;
+}
+
+.primer, .segundo, .tercero, .cuarto, .quinto, 
+.sexto, .septimo, .octavo, .noveno, .decimo {
+	border: 1px solid var(--bordes)
+}
+
+@media (max-width: 992px) {
+	h1 {
+		font-size: 70px;
+	}
+	.w {
+		height: 70%;
+		width: 70%;
+	}
+}
+
+@media (max-width: 600px) {
+	body {
+		padding: 15px;
+	}
+
+	h1 {
+		font-size: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	h3 {
+		font-size: 15px;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.w {
+		height: 100%;
+		width: 100%;
+		padding: 20px;
+		padding-left: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
